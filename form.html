@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Form</title>
+</head>
+
+<body>
+<h1>just try try form</h1>
+<hr>
+<h2>input form</h2>
+
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+    <fieldset>
+        <legend>Personal Details</legend>
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="frame" name="frame" pattern="[a-zA-Z ]${2,20}" required>
+        </p>
+        <p>Gneder
+        <br>
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" id="male" value="M" required>
+
+            <label for="Female">Female</label>
+            <input type="radio" name="gender" id="female" value="M">
+
+            <label>Others</label>
+            <input type="radio" name="gender" id="others" value="O">
+        </p>
+        <p>
+            Things you like about this seminar <br>
+            <label for="loc">Location</label>
+            <input type="checkbox" name="thing[]" id="loc" value="location">
+
+            <label for="fod">Food</label>
+            <input type="checkbox" name="thing[]" id="fod" value="food">
+
+            <label for="spe">Speaker</label>
+            <input type="checkbox" name="thing[]" id="spe" value="speaker">
+        </p>
+        <p>
+            <label for="rk"> how would you like to rank the seminar?</label>
+            <select name="rank" id="rk">
+                <option value="3" selected>Excellent</option>
+                <option value="2">Normal</option>
+                <option value="1">bad</option>
+            </select>
+        </p>
+        <p>
+            <label>Coment</label>
+            <br />
+                <textarea name="comments" rows="4" cols="20">Enter comments here</textarea>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </fieldset>
+    <p>
+        <label>
+            Phone
+            <input type="tel">
+        </label>
+    </p>
+</form>
+</body>
+
+</html>
