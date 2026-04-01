@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CWA Help Desk Appointment</title>
+</head>
+
+<body>
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+    <p>
+        <a href="http://www.swin.edu.au" target="blank"><img src="logo.png" alt="logo"></a>
+    </p>
+    <h1>
+        CWA Help Desk Appointment
+    </h1>
+    <p>
+        The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday Check Blackboard for when CWA tutors will be there
+    </p>
+    <fieldset>
+        <legend>Students details</legend>
+        <p>
+            <label for="STD_id">Student ID</label>
+            <input type="text" id="STD_id" name="student_id" min="7" max="10" required>
+        </p>
+        <p>
+            <label for="GV_name">Given Name</label>
+            <input type="text" id="GV_name" name="given_name" max="15" pattern="[A-Z]" required>
+            <label for="FM_name">Family Name</label>
+            <input type="text" id="FM_name" name="family_name" max="15" pattern="[A-Z]" required>
+        </p>
+    </fieldset>
+    <p>
+        <input type="submit" value="submit">
+    </p>
+    </form>
+</body>
+</html>
