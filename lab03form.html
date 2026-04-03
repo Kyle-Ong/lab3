@@ -30,6 +30,67 @@
             <input type="text" id="FM_name" name="family_name" pattern="[A-Z]{1-15}" required>
         </p>
     </fieldset>
+    <fieldset>
+        <legend>Your unit</legend>
+        <p>
+            <label for="COS10011">COS10011</label>
+            <input type="radio" name="COS10011" id="10011" value="1" required>
+
+            <label for="COS60004">COS60004</label>
+            <input type="radio" name="COS60004" id="60004" value="4">
+
+            <label for="COS60007">COS60007</label>
+            <input type="radio" name="COS60007" id="60007" value="7">
+        </p>
+        <p>
+             <label for="tt">Your Tutor</label>
+            <select name="tutor" id="tt">
+                <option value="" selected>Please Select</option>
+                <option value="1"> Kyle</option>
+                <option value="2">Justin</option>
+                <option value="3">Angelin</option>
+                <option value="4">Lim</option>
+            </select> 
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Issue</legend>
+        <p>
+            <label for="html">html</label>
+            <input type="checkbox" name="html" id="html" value="html">
+
+            <label for="CSS">CSS</label>
+            <input type="checkbox" name="CSS" id="CSS" value="CSS">
+
+            <label for="JavaScript">JavaScript</label>
+            <input type="checkbox" name="JavaScript" id="JS" value="JS">
+
+            <label for="PHP">PHP</label>
+            <input type="checkbox" name="PHP" id="PHP" value="PHP">
+
+            <label for="MySQl">MySQL</label>
+            <input type="checkbox" name="MySQL" id="MS" value="MS">
+        </p>
+
+        <p>
+            <label>Description of Issue</label>
+            <br/>
+            <textarea name="Issue" rows="4" cols="20">Write description of your problem here....</textarea>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferred Date/Time</legend>
+        <p>
+            <label for="Date">Date</label>
+            <input type="date">
+        </p>
+        <p>
+            <label for="Time">Time</label>
+            <input type="Time">
+        </p>
+    </fieldset>
+
     <p>
         <input type="submit" value="submit">
     </p>
